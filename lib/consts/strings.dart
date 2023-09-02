@@ -36,5 +36,7 @@ const searchAnyThing = "Search anything..",
     girlsDress="Girls Dress",
     womenGlass="Women Glasses",
     boyssWatches="Boyss Watches",
-    mobilePhones="Mobile Phones"
-    ;
+    mobilePhones="Mobile Phones",
+    featuredProduct="Featured Product"
+
+   ;
