@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: appname,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: AppBarTheme(backgroundColor: Colors.transparent),
-        fontFamily: regular
-      ),
+          scaffoldBackgroundColor: Colors.transparent,
+          appBarTheme: const AppBarTheme(
+              iconTheme: IconThemeData(color: darkFontGrey),
+              backgroundColor: Colors.transparent),
+          fontFamily: regular),
       home: const SplashScreen(),
     );
   }

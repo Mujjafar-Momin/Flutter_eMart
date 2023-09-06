@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             //search bar
             Container(
-              height: 60,
+             height: 60,
               alignment: Alignment.center,
               color: lightGrey,
               child: TextFormField(
@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                       itemCount: sliderList.length,
                       itemBuilder: ((context, index) {
                         return Image.asset(
-                          sliderList[index],
+                           sliderList[index],
                           fit: BoxFit.fill,
                         )
                             .box
@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                   10.heightBox,
 
                   //second slider
-                  VxSwiper.builder(
+                 VxSwiper.builder(
                       aspectRatio: 16 / 9,
                       height: 150,
                       autoPlay: true,
