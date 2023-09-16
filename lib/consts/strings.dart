@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 const appname = "eMart";
 const appversion = "Version 1.0.0";
 const credits = "@Mujjafar Dev";
@@ -49,3 +51,13 @@ const womenClothing = "Women Clothing",
     jewellery = "Jewellery",
     cellPhone = "Cellphone & Tabs",
     furniture = "Furniture";
+
+//item details screen
+const productYouLike = 'Products you may also like';
+
+//Profile screen
+const profileButtonList = [
+  "My orders",
+  "My wishlist",
+  "Message"
+];

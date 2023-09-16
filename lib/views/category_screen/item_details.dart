@@ -1,5 +1,6 @@
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/utils/button.dart';
+import 'package:emart_app/consts/list.dart';
 
 class ItemDetails extends StatelessWidget {
   final String? title;
@@ -113,49 +114,121 @@ class ItemDetails extends StatelessWidget {
                       ],
                     ).box.padding(const EdgeInsets.all(8)).make(),
                     10.heightBox,
-                     Row(
+                    Row(
                       children: [
                         SizedBox(
                           width: 100,
                           child: "Color: ".text.make(),
                         ),
-                        Row(
-                          children: [
-                              IconButton(onPressed: (){}, icon: const Icon(Icons.remove)),
-                                 "0".text.size(16).color(darkFontGrey).fontFamily(bold).make(),
-                                IconButton(onPressed: (){}, icon: const Icon(Icons.add)),
-                                 "0 available".text.size(16).color(textfieldGrey).fontFamily(bold).make(),
-                          ]
-                        )
+                        Row(children: [
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.remove)),
+                          "0"
+                              .text
+                              .size(16)
+                              .color(darkFontGrey)
+                              .fontFamily(bold)
+                              .make(),
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.add)),
+                          "0 available"
+                              .text
+                              .size(16)
+                              .color(textfieldGrey)
+                              .fontFamily(bold)
+                              .make(),
+                        ])
                       ],
-                    ).box.padding(const EdgeInsets.all(8)).make(),  
-                 Row(
+                    ).box.padding(const EdgeInsets.all(8)).make(),
+                    Row(
                       children: [
                         SizedBox(
                           width: 100,
                           child: "Total: ".text.make(),
                         ),
-                        "\$0.00".text.color(redColor).size(16).fontFamily(bold).make()
+                        "\$0.00"
+                            .text
+                            .color(redColor)
+                            .size(16)
+                            .fontFamily(bold)
+                            .make()
                       ],
                     ).box.padding(const EdgeInsets.all(8)).make()
-                 ],
+                  ],
                 ).box.white.shadowSm.make(),
 
                 10.heightBox,
-                "Description".text.color(darkFontGrey).fontFamily(semibold).make(),
-          
+                "Description"
+                    .text
+                    .color(darkFontGrey)
+                    .size(16)
+                    .fontFamily(bold)
+                    .make(),
+
                 10.heightBox,
-                "This is dummy item and dummy description here...".text.color(darkFontGrey).fontFamily(semibold).make(),
+                "This is dummy item and dummy description here..."
+                    .text
+                    .color(darkFontGrey)
+                    .fontFamily(semibold)
+                    .make(),
+                10.heightBox,
                 ListView(
+                  physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
-                  children: List.generate(5, (index) => ListTile(
-                  title:  "Video".text.color(darkFontGrey).fontFamily(semibold).make(),
-                  trailing:const Icon(Icons.arrow_forward),
-                )),)
-
-
-
-
+                  children: List.generate(
+                    5,
+                    (index) => ListTile(
+                      title: video[index]
+                          .text
+                          .color(darkFontGrey)
+                          .fontFamily(semibold)
+                          .make(),
+                      trailing: const Icon(Icons.arrow_forward),
+                    ),
+                  ),
+                ),
+                20.heightBox,
+                productYouLike.text.fontFamily(bold).size(16).make(),
+                20.heightBox,
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: List.generate(
+                        6,
+                        (index) => Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(
+                                  imgP1,
+                                  width: 150,
+                                  fit: BoxFit.cover,
+                                ),
+                                10.heightBox,
+                                "Laptop 8GBRAM/1TB"
+                                    .text
+                                    .fontFamily(semibold)
+                                    .color(darkFontGrey)
+                                    .make(),
+                                10.heightBox,
+                                "\$600"
+                                    .text
+                                    .color(redColor)
+                                    .size(16)
+                                    .fontFamily(bold)
+                                    .make()
+                              ],
+                            )
+                                .box
+                                .white
+                                .margin(
+                                    const EdgeInsets.symmetric(horizontal: 4))
+                                .padding(const EdgeInsets.all(8))
+                                .shadowSm
+                                .roundedSM
+                                .make()),
+                  ),
+                ),
+               
               ],
             ),
           ),

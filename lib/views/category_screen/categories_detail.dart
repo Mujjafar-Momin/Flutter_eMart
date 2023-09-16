@@ -10,7 +10,7 @@ class CategoryDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return bgWidget(
-      child: Scaffold(
+     child: Scaffold(
         appBar: AppBar(
           title: title!.text.fontFamily(bold).white.make(),
         ),

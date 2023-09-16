@@ -11,7 +11,7 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return bgWidget(
-        child: Scaffold(
+   child: Scaffold(
       appBar: AppBar(
         title: categories.text.fontFamily(bold).white.make(),
       ),

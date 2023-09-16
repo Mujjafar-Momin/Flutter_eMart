@@ -33,3 +33,9 @@ const categoryTitleList = [
   cellPhone,
   furniture
 ];
+
+//item details screen
+const video = ["Review Rating", "Video", "Images", "Camera", ""];
+
+//profile screen
+const profileButtonIconList = [icOrder, icWallet, icMessages];
