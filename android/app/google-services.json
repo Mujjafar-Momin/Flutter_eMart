@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704793004623",
+    "project_id": "flutter-emart-c6c48",
+    "storage_bucket": "flutter-emart-c6c48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704793004623:android:452fbc09affca1f1cb383a",
+        "android_client_info": {
+          "package_name": "com.example.emart_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC150oqt0k5wXnWOgBNhpYQ54dt23BZ2wE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
